@@ -152,6 +152,7 @@ input[type="text"], select, textarea {
   border-radius: 4px;
   margin-bottom: 20px;
   box-sizing: border-box;
+
 }
 
 input[type="submit"] {

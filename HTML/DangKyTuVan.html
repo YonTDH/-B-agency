@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/LienHe.css">
-    <title>Liên Hệ B-AGENCY</title>
+    <link rel="stylesheet" href="/CSS/DangKyTuVan.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <script src="../js/jquery-3.6.4.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <title>Đăng ký tư vấn B-AGENCY</title>
 </head>
 <body>
   <div class="header1" style="margin-right: 200px;">
@@ -17,11 +20,11 @@
 
   <hr style="width: 80%; color: black; margin-left: 100px;">
 
-  <div class="header">
-  <div class="header_inner">
+  <div class="header" >
+  <div class="header_inner" >
     <ul>
-      <li class="menu">
-        <li class="menu_item"><a href="" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);color: white;">Giới thiệu</a></li>
+      <li class="menu" >
+        <li class="menu_item"><a href="/HTML/GioiThieu.html" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);color: white;">Giới thiệu</a></li>
         <li class="menu_item">
           <a href="#" class="menu_link">Kho Giao Diện ▼ </a>
           <div class="menu_child">
@@ -75,42 +78,59 @@
           </div>
         </li>
         
-        <li class="menu_item"><a href="#" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);color: white;">Liên Hệ</a></li>
-        <li class="menu_item"><a href="/HTML/DangKyTuVan.html" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);">Đăng Ký Tư Vấn</a></li>
+        <li class="menu_item"><a href="/HTML/LienHe.html" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);color: white;">Liên Hệ</a></li>
+        <li class="menu_item"><a href="#" class="menu_link" style="border-radius: 40px; background-color: rgb(11,159,172);">Đăng Ký Tư Vấn</a></li>
       </li>
     </ul>
   </div>
   </div>
   <div class="nenXanh"></div>
   <div class="center">
+       
 		<div class="form">
-			<h1>Thông tin liên hệ</h1>
+			<h1>Đăng Ký Tư vấn</h1>
 			<form action="">
-				<label for="name">Tên *</label>
-				<input type="text" id="name" name="name" required>
+                <div class="row form-group"> 
+                    <div class="col-6">
+                        <label for="name">Tên *</label>
+                        <input type="text" id="name" name="name" required placeholder="Nhập tên bạn">
+        
+                    </div>
+                    <div class="col-6">
+                        <label for="mobile">ĐT di động *</label>
+                        <input type="text" id="mobile" name="mobile" required placeholder="Nhập số điện thoại">
+                    </div>
+                    
+                    
+                </div>
+                <div class="row form-group"> 
+                    <div class="col-12">
+                        <label for="service">Nhập email</label>
+                        <input type="email" id = "email" name="email" placeholder="Nhập email của bạn">
+                    </div>
+                </div>
+                
+                <div class="row form-group"> 
+                    <div class="col-12">
+                        <label for="address">Tiêu đề</label>
+                        <input type="text" id="title" name="title" placeholder="Tiêu đề">
+                    </div>
+                </div>
+				
+                <div class="row form-group" style="height: 100px;"> 
+                    <div class="col-12" style="height: 100%;">
+                        <textarea id="content" name="content"></textarea>
+                    </div>
+                </div>
+                
 
-				<label for="mobile">ĐT di động *</label>
-				<input type="text" id="mobile" name="mobile" required>
-
-				<label for="service">Dịch Vụ B-Agency *</label>
-				<select id="service" name="service">
-					<option value="">Dịch Vụ Marketing Tổng Thể</option>
-          <option value="">Thiết Kế Web chuẩn SEO</option>
-          <option value="">Dịch Vụ SEO website</option>
-          <option value="">Dịch Vụ content Marketing</option>
-          <option value="">Dịch Vụ Quảng Cáo Google</option>
-          <option value="">Dịch VỤ PR Báo Chí</option>
-          <option value="">Dịch Vụ Quảng Cáo Facebook</option>
-				</select>
-
-				<label for="address">Địa chỉ</label>
-				<input type="text" id="address" name="address">
-
-				<label for="content">Nội dung</label>
-				<textarea id="content" name="content"></textarea>
-
-				<input type="submit" value="Gửi">
-        <input type="submit" value="Đặt Lại">
+                <div class="form-group row">
+                    <div class="col-12 text-center">
+                        <input type="submit" class="btn" id="btnnk" value="Gửi liên hệ">
+                       
+                    </div> 
+                </div>
+			
 			</form>
 		</div>
 	</div>
@@ -119,15 +139,15 @@
     <h4 style="text-align: center;">CÔNG TY TNHH GIẢI PHÁP TRỰC TUYẾN B AGENCY</h4>
     <div class="container">
       <div>
-          <img src="/IMG/hotline11.png" alt="" style="width: 50px; height: 50px; margin-left: 180px;"><br>
+          <img src="/IMG/hotline11.png" alt="" style="width: 50px; height: 50px; margin-left: 116px;"><br>
           <div class="description"> <p style="">Hotline <br> 0862 522 486</p> </div>
       </div>
       <div>
-          <img src="/IMG/address.jpg" alt="" style="width: 50px; height: 50px; margin-left: 180px;"><br>
+          <img src="/IMG/address.jpg" alt="" style="width: 50px; height: 50px; margin-left: 116px;"><br>
           <div class="description"> <p style="">Địa chỉ <br>HCM: Số 51 đường số 2, CityLand Park Hills, Phường 10, Quận Gò Vấp, Tp. Hồ Chí Minh</p> </div>
       </div>
       <div>
-          <img src="/IMG/maillll.jpg" alt="" style="width: 50px; height: 50px; margin-left: 180px;"><br>
+          <img src="/IMG/maillll.jpg" alt="" style="width: 50px; height: 50px; margin-left: 116px;"><br>
           <div class="description"> <p style="">bagency.co@gmail.com</p></div>
       </div>
     </div>
